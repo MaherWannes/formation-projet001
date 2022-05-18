@@ -1,0 +1,128 @@
+:root {
+    --primary-color:#000000; 
+    --secondary-color :#14213D; 
+    --nav-text-color :#FCA311;
+    --darkligth-color :#E5E5E5;
+    --light-color : #FFFFFF;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+@font-face {
+  font-family: 'Albertus Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Albertus Medium'), url('https://fonts.cdnfonts.com/s/13715/Albertus Medium Regular.woff') format('woff');
+}
+body {
+  
+  background-image: url(images/background.jpg);
+  }
+.flex-container {
+  margin-top: -0.5rem;
+  margin-bottom: -0,5rem;
+  margin-left: -0.5rem;
+  margin-right: -0.8rem;
+  display: flex;
+  background-color:var(--nav-text-color);
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
+}
+
+.flex-container a {
+  font-family: 'Albertus Medium';
+  text-decoration: none;
+  color:var(--secondary-color);
+  font-size: 24px;
+  
+}
+
+.flex-item a:hover {
+  padding: 6px 6px;
+  background-color: #14213D;
+  color:var(--nav-text-color);
+}
+.flex-item {
+  padding:0px 5%;
+  display: block;
+  background-color:var(--nav-text-color);
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  font-size: 20px;
+  flex-wrap: nowrap;
+}
+.flex-logo img {
+margin-top: 2px;
+align-items: center;
+height: 125px; 
+padding: 10px 10px 10px
+}
+
+h1 {
+  text-align: center;
+  color: var(--nav-text-color);
+  font-family: 'Libre Baskerville', serif; /*'Albertus Medium' ou 'Roboto' 'Libre Baskerville'  */
+  text-shadow: 1px 1px 2px var(--primary-color);
+}
+
+h2 {
+  text-align: center;
+  font-family:'Libre Baskerville', serif;
+  color: var(--nav-text-color);
+  text-shadow: 1px 1px 2px var(--primary-color);
+}
+p {
+  max-width: 60ch;
+  text-shadow: 1px 1px 2px black;
+  color: var(--darkligth-color);
+  font-family:'Albertus Medium';
+  text-align:center;
+  margin:0 auto;
+  font-size: 18px;
+  line-height: 1.5em;
+
+}
+
+.play {
+  display: block;
+  margin-top: 80px;
+  margin-inline: auto;
+  position: relative;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+		-webkit-tap-highlight-color: transparent;
+}
+
+button.play {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	background:var(--nav-text-color);
+	border: 2px solid black;
+	box-shadow: 5px 5px 0 black,
+		-5px -5px 0 black,
+		-5px 5px 0 black,
+		5px -5px 0 black;
+	transition: 500ms ease-in-out;
+}
+
+button.play:hover {
+	box-shadow: 20px 5px 0 var(--secondary-color), -20px -5px 0 var(--secondary-color);
+}
+
+button.play:focus {
+	outline: none;
+}
+
+/*suite pour l'effet curser plus bas*/
+
